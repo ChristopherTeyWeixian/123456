@@ -27,7 +27,7 @@ jobs:
       uses: actions/checkout@v2
       with:
         repository: ChristopherTeyWeixian/PrivateSimpCity
-        path: PrivateSimpCity
+        path: test_increment1.py
         token: ${{ secrets.QAREMOTE }}
     - name: Linter Check with Flake8
       run: |
