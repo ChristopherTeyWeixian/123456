@@ -28,7 +28,7 @@ jobs:
       with:
         repository: ChristopherTeyWeixian/PrivateSimpCity
         path: SimpCity
-        token: ${{secrets.SECRETSQAREMOTE }}
+        token: ${{SECRETSQAREMOTE }}
     - name: Linter Check with Flake8
       run: |
         flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
